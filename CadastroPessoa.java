@@ -31,7 +31,7 @@ public class CadastroPessoa extends JFrame {
         painelPrincipal.add(titulo);
 
         // Tipo, CPF, Fornecedor
-        JPanel painelLinha1 = new JPanel(null);
+        JPanel painelLinha1 = new JPanel(null); // organização dos campos manualmente 
         painelLinha1.setBounds(40, 70, 950, 30);
         painelLinha1.setBackground(painelPrincipal.getBackground());
 
@@ -169,7 +169,7 @@ public class CadastroPessoa extends JFrame {
         painelPrincipal.add(btnExcluir);
         painelPrincipal.add(btnLimpar);
 
-        setVisible(true);
+        setVisible(true); // Mostrar a janela na tela
     }
 
     private JLabel criarLabel(String texto, int x, int y) {
