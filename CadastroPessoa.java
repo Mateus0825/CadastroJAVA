@@ -159,7 +159,7 @@ public class CadastroPessoa extends JFrame {
         JButton btnLimpar = criarBotaoCinza("Limpar", 300);
 
         btnConfirmar.addActionListener(e -> {
-            JOptionPane.showMessageDialog(this, "Cadastro realizado com sucesso!");
+            JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!");
             limpar();
         });
         btnExcluir.addActionListener(e -> limpar());
@@ -173,11 +173,11 @@ public class CadastroPessoa extends JFrame {
     }
 
     private JLabel criarLabel(String texto, int x, int y) {
-        JLabel lbl = new JLabel(texto);
+        JLabel lbl = new JLabel(texto); // Cria o rótulo com o texto dado
         lbl.setBounds(x, y, 140, 30);
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         lbl.setBorder(BorderFactory.createLineBorder(Color.BLACK));
-        return lbl;
+        return lbl; // Retorna o JLabel configurado
     }
 
     private JLabel criarLabel(String texto, int x) {
