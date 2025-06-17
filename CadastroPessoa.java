@@ -172,9 +172,9 @@ public class CadastroPessoa extends JFrame {
         setVisible(true); // Mostrar a janela na tela
     }
 
-    private JLabel criarLabel(String texto, int x, int y) {
+    private JLabel criarLabel(String texto, int x, int y) { // Método privado que cria e retorna um rótulo com texto e posição definidos
         JLabel lbl = new JLabel(texto); // Cria o rótulo com o texto dado
-        lbl.setBounds(x, y, 140, 30);
+        lbl.setBounds(x, y, 140, 30); //a e l
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         lbl.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         return lbl; // Retorna o JLabel configurado
